@@ -163,12 +163,33 @@ function renderGroups(data) {
 
         group.cards.forEach(card => {
             const cardDiv = document.createElement("div");
+            let colour = "";
+            switch (card.rarity) {
+                case "common":
+                    colour = "#888888";
+                    break;
+                case "rare":
+                    colour = "#f2a843";
+                    break;
+                case "epic":
+                    colour = "#a421ad";
+                    break;
+                case "legendary":
+                    colour = "#73cbfa";
+                    break;
+                case "champion":
+                    colour = "#f6c543";
+                    break;
+                default:
+                    colour = "#ffffff";
+            }
             cardDiv.classList.add("card");
             cardDiv.innerHTML = `
                 <img src="${card.iconURL}" alt="${card.name}">
-                <p><strong>${card.name}</strong></p>
-                <p>${card.rarity} ${card.type}</p>
-                <p>Elixir: ${card.elixir}</p>
+                <p class="two-lines"><strong>${card.name}</strong></p>
+                <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+                <p style="color: #da52f2">Elixir: ${card.elixir}</p>
+                <p>${card.year}</p>
             `;
             cardsDiv.appendChild(cardDiv);
             cardDiv.addEventListener("click", () => {
@@ -176,7 +197,7 @@ function renderGroups(data) {
                     data.groups[idx].cards.splice(data.groups[idx].cards.indexOf(card), 1);
                     renderGroups(data);
                 }
-                
+
             });
         });
 
@@ -205,7 +226,7 @@ document.getElementById("submitGroupBtn").addEventListener("click", () => {
         return;
     }
     data.groups.push({ name: groupName, cards: [] });
-    groupForm.reset();
+    document.getElementById("groupName").value = "";
     renderGroups(data);
 });
 
@@ -219,4 +240,11 @@ document.getElementById("exportBtn").addEventListener("click", () => {
     a.download = "groups.json";
     a.click();
     URL.revokeObjectURL(url);
+});
+
+
+window.addEventListener("beforeunload", function (e) {
+    // Show confirmation dialog
+    e.preventDefault(); // some browsers require this
+    e.returnValue = ""; // standard way
 });
