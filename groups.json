@@ -1,29 +1,1260 @@
-{"groups": [
-    {"name": "Spirits",
-    "cards": [
-        {"name": "Ice Spirit",
-        "rarity": "common",
-        "type": "troop",
-        "elixir": 1,
-        "iconURL": "https://api-assets.clashroyale.com/cards/300/lv1budiafU9XmSdrDkk0NYyqASAFYyZ06CPysXKZXlA.png",
-        "year": 2016},
-        {"name": "Fire Spirit",
-        "rarity": "common",
-        "type": "troop",
-        "elixir": 1,
-        "iconURL": "https://api-assets.clashroyale.com/cards/300/16-BqusVvynIgYI8_Jci3LDC-r8AI_xaIYLgXqtlmS8.png",
-        "year": 2016},
-        {"name": "Electro Spirit",
-        "rarity": "common",
-        "type": "troop",
-        "elixir": 1,
-        "iconURL": "https://api-assets.clashroyale.com/cards/300/WKd4-IAFsgPpMo7dDi9sujmYjRhOMEWiE07OUJpvD9g.png",
-        "year": 2020},
-        {"name": "Heal Spirit",
-        "rarity": "common",
-        "type": "troop",
-        "elixir": 1,
-        "iconURL": "https://api-assets.clashroyale.com/cards/300/GITl06sa2nGRLPvboyXbGEv5E3I-wAwn1Eqa5esggbc.png",
-        "year": 2020}
-    ]}
-]}
+
+{
+  "groups": [
+    {
+      "name": "Spirits",
+      "cards": [
+        {
+          "name": "Ice Spirit",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 1,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/lv1budiafU9XmSdrDkk0NYyqASAFYyZ06CPysXKZXlA.png",
+          "year": 2016
+        },
+        {
+          "name": "Fire Spirit",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 1,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/16-BqusVvynIgYI8_Jci3LDC-r8AI_xaIYLgXqtlmS8.png",
+          "year": 2016
+        },
+        {
+          "name": "Electro Spirit",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 1,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/WKd4-IAFsgPpMo7dDi9sujmYjRhOMEWiE07OUJpvD9g.png",
+          "year": 2020
+        },
+        {
+          "name": "Heal Spirit",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 1,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/GITl06sa2nGRLPvboyXbGEv5E3I-wAwn1Eqa5esggbc.png",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "name": "Buildings",
+      "cards": [
+        {
+          "name": "Elixir Collector",
+          "rarity": "rare",
+          "type": "building",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/BGLo3Grsp81c72EpxLLk-Sofk3VY56zahnUNOv3JcT0.png",
+          "year": "2016"
+        },
+        {
+          "name": "X-Bow",
+          "rarity": "epic",
+          "type": "building",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/zVQ9Hme1hlj9Dc6e1ORl9xWwglcSrP7ejow5mAhLUJc.png",
+          "year": "2016"
+        },
+        {
+          "name": "Tesla",
+          "rarity": "common",
+          "type": "building",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/OiwnGrxFMNiHetYEerE-UZt0L_uYNzFY7qV_CA_OxR4.png",
+          "year": "2016"
+        },
+        {
+          "name": "Barbarian Hut",
+          "rarity": "rare",
+          "type": "building",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/ho0nOG2y3Ch86elHHcocQs8Fv_QNe0cFJ2CijsxABZA.png",
+          "year": "2016"
+        },
+        {
+          "name": "Mortar",
+          "rarity": "common",
+          "type": "building",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/lPOSw6H7YOHq2miSCrf7ZDL3ANjhJdPPDYOTujdNrVE.png",
+          "year": "2016"
+        },
+        {
+          "name": "Bomb Tower",
+          "rarity": "rare",
+          "type": "building",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/rirYRyHPc97emRjoH-c1O8uZCBzPVnToaGuNGusF3TQ.png",
+          "year": "2016"
+        },
+        {
+          "name": "Inferno Tower",
+          "rarity": "rare",
+          "type": "building",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png",
+          "year": "2016"
+        },
+        {
+          "name": "Tombstone",
+          "rarity": "rare",
+          "type": "building",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/LjSfSbwQfkZuRJY4pVxKspZ-a0iM5KAhU8w-a_N5Z7Y.png",
+          "year": "2016"
+        },
+        {
+          "name": "Goblin Cage",
+          "rarity": "rare",
+          "type": "building",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/vD24bBgK4rSq7wx5QEbuqChtPMRFviL_ep76GwQw1yA.png",
+          "year": "2019"
+        },
+        {
+          "name": "Goblin Hut",
+          "rarity": "rare",
+          "type": "building",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/l8ZdzzNLcwB4u7ihGgxNFQOjCT_njFuAhZr7D6PRF7E.png",
+          "year": "2016"
+        },
+        {
+          "name": "Cannon",
+          "rarity": "common",
+          "type": "building",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/nZK1y-beLxO5vnlyUhK6-2zH2NzXJwqykcosqQ1cmZ8.png",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "Spell",
+      "cards": [
+        {
+          "name": "Tornado",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/QJB-QK1QJHdw4hjpAwVSyZBozc2ZWAR9pQ-SMUyKaT0.png",
+          "year": "2016"
+        },
+        {
+          "name": "Void",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/BykyeWDqzn4PlHSszu3NbrXT1mHxW2EA8vHbQGR5LDE.png",
+          "year": "2024"
+        },
+        {
+          "name": "Clone",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/mHVCet-1TkwWq-pxVIU2ZWY9_2z7Z7wtP25ArEUsP_g.png",
+          "year": "2016"
+        },
+        {
+          "name": "Mirror",
+          "rarity": "epic",
+          "type": "spell",
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/wC6Cm9rKLEOk72zTsukVwxewKIoO4ZcMJun54zCPWvA.png",
+          "year": "2016"
+        },
+        {
+          "name": "Goblin Curse",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/OQPfGgT5mHEUvPuKKt0plZT0PNtIjCqUgQ3Rm86dQ2k.png",
+          "year": "2024"
+        },
+        {
+          "name": "Rage",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/bGP21OOmcpHMJ5ZA79bHVV2D-NzPtDkvBskCNJb7pg0.png",
+          "year": "2016"
+        },
+        {
+          "name": "Royal Delivery",
+          "rarity": "common",
+          "type": "spell",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/LPg7AGjGI3_xmi7gLLgGC50yKM1jJ2teWkZfoHJcIZo.png",
+          "year": "2020"
+        },
+        {
+          "name": "Graveyard",
+          "rarity": "legendary",
+          "type": "spell",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Icp8BIyyfBTj1ncCJS7mb82SY7TPV-MAE-J2L2R48DI.png",
+          "year": "2016"
+        },
+        {
+          "name": "Earthquake",
+          "rarity": "rare",
+          "type": "spell",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/XeQXcrUu59C52DslyZVwCnbi4yamID-WxfVZLShgZmE.png",
+          "year": "2019"
+        },
+        {
+          "name": "The Log",
+          "rarity": "legendary",
+          "type": "spell",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png",
+          "year": "2016"
+        },
+        {
+          "name": "Barbarian Barrel",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png",
+          "year": "2017"
+        },
+        {
+          "name": "Poison",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/98HDkG2189yOULcVG9jz2QbJKtfuhH21DIrIjkOjxI8.png",
+          "year": "2016"
+        },
+        {
+          "name": "Vines",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/V5sJlPuo2WBRtirJ1lGEPJA4NvQ0KPwFeMrpxLX5z_8.png",
+          "year": "2025"
+        },
+        {
+          "name": "Lightning",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/fpnESbYqe5GyZmaVVYe-SEu7tE0Kxh_HZyVigzvLjks.png",
+          "year": "2016"
+        },
+        {
+          "name": "Freeze",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/I1M20_Zs_p_BS1NaNIVQjuMJkYI_1-ePtwYZahn0JXQ.png",
+          "year": "2016"
+        },
+        {
+          "name": "Giant Snowball",
+          "rarity": "common",
+          "type": "spell",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/7MaJLa6hK9WN2_VIshuh5DIDfGwm0wEv98gXtAxLDPs.png",
+          "year": "2018"
+        },
+        {
+          "name": "Rocket",
+          "rarity": "rare",
+          "type": "spell",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Ie07nQNK9CjhKOa4-arFAewi4EroqaA-86Xo7r5tx94.png",
+          "year": "2016"
+        },
+        {
+          "name": "Zap",
+          "rarity": "common",
+          "type": "spell",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png",
+          "year": "2016"
+        },
+        {
+          "name": "Fireball",
+          "rarity": "rare",
+          "type": "spell",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png",
+          "year": "2016"
+        },
+        {
+          "name": "Arrows",
+          "rarity": "common",
+          "type": "spell",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "pressure",
+      "cards": [
+        {
+          "name": "Goblin Drill",
+          "rarity": "epic",
+          "type": "building",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/eN2TKUYbih-26yBi0xy5LVFOA0zDftgDqxxnVfdIg1o.png",
+          "year": "2021"
+        },
+        {
+          "name": "Suspicious Bush",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/vqTzGAjseQv9F5rf4tsFWeocvg0dyPw1j_nB1cmDZfI.png",
+          "year": "2024"
+        },
+        {
+          "name": "Miner",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Y4yWvdwBCg2FpAZgs8T09Gy34WOwpLZW-ttL52Ae8NE.png",
+          "year": "2016"
+        },
+        {
+          "name": "Goblin Barrel",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png",
+          "year": "2016"
+        },
+        {
+          "name": "Wall Breakers",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/_xPphEfC8eEwFNrfU3cMQG9-f5JaLQ31ARCA7l3XtW4.png",
+          "year": "2019"
+        },
+        {
+          "name": "Skeleton Barrel",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "name": "arrow bait",
+      "cards": [
+        {
+          "name": "Bomber",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/12n1CesxKIcqVYntjxcF36EFA-ONw7Z-DoL0_rQrbdo.png",
+          "year": "2016"
+        },
+        {
+          "name": "Minions",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/yHGpoEnmUWPGV_hBbhn-Kk-Bs838OjGzWzJJlQpQKQA.png",
+          "year": "2016"
+        },
+        {
+          "name": "Archers",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png",
+          "year": "2016"
+        },
+        {
+          "name": "Dart Goblin",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/BmpK3bqEAviflqHCdxxnfm-_l3pRPJw3qxHkwS55nCY.png",
+          "year": "2016"
+        },
+        {
+          "name": "Princess",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/bAwMcqp9EKVIKH3ZLm_m0MqZFSG72zG-vKxpx8aKoVs.png",
+          "year": "2016"
+        },
+        {
+          "name": "Firecracker",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png",
+          "year": "2020"
+        }
+      ]
+    },
+    {
+      "name": "fireball bait",
+      "cards": [
+        {
+          "name": "Ice Wizard",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/W3dkw0HTw9n1jB-zbknY2w3wHuyuLxSRIAV5fUT1SEY.png",
+          "year": "2016"
+        },
+        {
+          "name": "Musketeer",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png",
+          "year": "2016"
+        },
+        {
+          "name": "Little Prince",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/dY-gSseki6KBpkIG17safHH5YlB8SErFZO9OXbJxf9w.png",
+          "year": "2023"
+        },
+        {
+          "name": "Skeleton Dragons",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/qPOtg9uONh47_NLxGhhFc_ww9PlZ6z3Ry507q1NZUXs.png",
+          "year": "2020"
+        },
+        {
+          "name": "Flying Machine",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/hzKNE3QwFcrSrDDRuVW3QY_OnrDPijSiIp-PsWgFevE.png",
+          "year": "2017"
+        },
+        {
+          "name": "Furnace",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/iqbDiG7yYRIzvCPXdt9zPb3IvMt7F7Gi4wIPnh2x4aI.png",
+          "year": "2025"
+        },
+        {
+          "name": "Hunter",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/VNabB1WKnYtYRSG7X_FZfnZjQDHTBs9A96OGMFmecrA.png",
+          "year": "2017"
+        },
+        {
+          "name": "Magic Archer",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Avli3W7BxU9HQ2SoLiXnBgGx25FoNXUSFm7OcAk68ek.png",
+          "year": "2017"
+        },
+        {
+          "name": "Mother Witch",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/fO-Xah8XZkYKaSK9SCp3wnzwxtvIhun9NVY-zzte1Ng.png",
+          "year": "2021"
+        },
+        {
+          "name": "Wizard",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "Brainrot",
+      "cards": [
+        {
+          "name": "Mega Knight",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 7,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png",
+          "year": "2017"
+        },
+        {
+          "name": "P.E.K.K.A",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 7,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/MlArURKhn_zWAZY-Xj1qIRKLVKquarG25BXDjUQajNs.png",
+          "year": 2016
+        },
+        {
+          "name": "Skeleton King",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/dCd69_wN9f8DxwuqOGtR4QgWhHIPIaTNxZ1e23RzAAc.png",
+          "year": "2021"
+        },
+        {
+          "name": "Goblin Machine",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/-iLlotr6GCFndL_1BSBqWBb6DnsHBhLerd5EblZDNfU.png",
+          "year": "2024"
+        },
+        {
+          "name": "Goblin Giant",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/SoW16cY3jXBwaTDvb39DkqiVsoFVaDWbzf5QBYphJrY.png",
+          "year": "2018"
+        },
+        {
+          "name": "Electro Giant",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 7,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png",
+          "year": "2020"
+        },
+        {
+          "name": "Boss Bandit",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/nuceG9o7rAyvyc7D3sp2QSiRYtSOEgraq0NJkDf729s.png",
+          "year": "2025"
+        },
+        {
+          "name": "Sparky",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/2GKMkBrArZXgQxf2ygFjDs4VvGYPbx8F6Lj_68iVhIM.png",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "goblins",
+      "cards": [
+        {
+          "name": "Goblins",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/X_DQUye_OaS3QN6VC9CPw05Fit7wvSm3XegXIXKP--0.png",
+          "year": "2016"
+        },
+        {
+          "name": "Spear Goblins",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/FSDFotjaXidI4ku_WFpVCTWS1hKGnFh1sxX0lxM43_E.png",
+          "year": "2016"
+        },
+        {
+          "name": "Suspicious Bush",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/vqTzGAjseQv9F5rf4tsFWeocvg0dyPw1j_nB1cmDZfI.png",
+          "year": "2024"
+        },
+        {
+          "name": "Goblin Barrel",
+          "rarity": "epic",
+          "type": "spell",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png",
+          "year": "2016"
+        },
+        {
+          "name": "Goblin Gang",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png",
+          "year": "2016"
+        },
+        {
+          "name": "Dart Goblin",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/BmpK3bqEAviflqHCdxxnfm-_l3pRPJw3qxHkwS55nCY.png",
+          "year": "2016"
+        },
+        {
+          "name": "Goblin Hut",
+          "rarity": "rare",
+          "type": "building",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/l8ZdzzNLcwB4u7ihGgxNFQOjCT_njFuAhZr7D6PRF7E.png",
+          "year": "2016"
+        },
+        {
+          "name": "Goblin Cage",
+          "rarity": "rare",
+          "type": "building",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/vD24bBgK4rSq7wx5QEbuqChtPMRFviL_ep76GwQw1yA.png",
+          "year": "2019"
+        },
+        {
+          "name": "Goblin Giant",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/SoW16cY3jXBwaTDvb39DkqiVsoFVaDWbzf5QBYphJrY.png",
+          "year": "2018"
+        }
+      ]
+    },
+    {
+      "name": "Skeletons",
+      "cards": [
+        {
+          "name": "Skeletons",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 1,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png",
+          "year": "2016"
+        },
+        {
+          "name": "Skeleton Army",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png",
+          "year": "2016"
+        },
+        {
+          "name": "Bomber",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/12n1CesxKIcqVYntjxcF36EFA-ONw7Z-DoL0_rQrbdo.png",
+          "year": "2016"
+        },
+        {
+          "name": "Wall Breakers",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/_xPphEfC8eEwFNrfU3cMQG9-f5JaLQ31ARCA7l3XtW4.png",
+          "year": "2019"
+        },
+        {
+          "name": "Guards",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/1ArKfLJxYo6_NU_S9cAeIrfbXqWH0oULVJXedxBXQlU.png",
+          "year": "2016"
+        },
+        {
+          "name": "Skeleton Barrel",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png",
+          "year": "2017"
+        },
+        {
+          "name": "Skeleton Dragons",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/qPOtg9uONh47_NLxGhhFc_ww9PlZ6z3Ry507q1NZUXs.png",
+          "year": "2020"
+        },
+        {
+          "name": "Giant Skeleton",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/0p0gd0XaVRu1Hb1iSG1hTYbz2AN6aEiZnhaAib5O8Z8.png",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "champions",
+      "cards": [
+        {
+          "name": "Little Prince",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/dY-gSseki6KBpkIG17safHH5YlB8SErFZO9OXbJxf9w.png",
+          "year": "2023"
+        },
+        {
+          "name": "Skeleton King",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/dCd69_wN9f8DxwuqOGtR4QgWhHIPIaTNxZ1e23RzAAc.png",
+          "year": "2021"
+        },
+        {
+          "name": "Golden Knight",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/WJd207D0O1sN-l1FTb8P9KhYL2oF5jY26vRUfTUW3FQ.png",
+          "year": "2021"
+        },
+        {
+          "name": "Mighty Miner",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Cd9R56yraxTvJiD8xJ2qT2OdsHyh94FqOAarXpbyelo.png",
+          "year": "2022"
+        },
+        {
+          "name": "Archer Queen",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/p7OQmOAFTery7zCzlpDdm-LOD1kINTm42AwIHchZfWk.png",
+          "year": "2021"
+        },
+        {
+          "name": "Monk",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/2onG4t4-CxqwFVZAn6zpWxFz3_mG2ksSj4Q7zldo1SM.png",
+          "year": "2022"
+        },
+        {
+          "name": "Goblinstein",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/mQ20B49dXdk7Nv0lMdLw175M3YvkSpN6KNnho8UKBd8.png",
+          "year": "2024"
+        },
+        {
+          "name": "Boss Bandit",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/nuceG9o7rAyvyc7D3sp2QSiRYtSOEgraq0NJkDf729s.png",
+          "year": "2025"
+        }
+      ]
+    },
+    {
+      "name": "air ranged",
+      "cards": [
+        {
+          "name": "Spirit Empress",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/MWWBZqiQeRBXSqEITVMj46nO_uCIUsqBidvUw9K2twY.png",
+          "year": "2025"
+        },
+        {
+          "name": "Inferno Dragon",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/y5HDbKtTbWG6En6TGWU0xoVIGs1-iQpIP4HC-VM7u8A.png",
+          "year": "2016"
+        },
+        {
+          "name": "Electro Dragon",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/tN9h6lnMNPCNsx0LMFmvpHgznbDZ1fBRkx-C7UfNmfY.png",
+          "year": "2018"
+        },
+        {
+          "name": "Flying Machine",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/hzKNE3QwFcrSrDDRuVW3QY_OnrDPijSiIp-PsWgFevE.png",
+          "year": "2017"
+        },
+        {
+          "name": "Mega Minion",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/-T_e4YLbuhPBKbYnBwQfXgynNpp5eOIN_0RracYwL9c.png",
+          "year": "2016"
+        },
+        {
+          "name": "Minions",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/yHGpoEnmUWPGV_hBbhn-Kk-Bs838OjGzWzJJlQpQKQA.png",
+          "year": "2016"
+        },
+        {
+          "name": "Bats",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png",
+          "year": "2017"
+        },
+        {
+          "name": "Baby Dragon",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/cjC9n4AvEZJ3urkVh-rwBkJ-aRSsydIMqSAV48hAih0.png",
+          "year": "2016"
+        }
+      ]
+    },
+    {
+      "name": "Giants",
+      "cards": [
+        {
+          "name": "Golem",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 8,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/npdmCnET7jmVjJvjJQkFnNSNnDxYHDBigbvIAloFMds.png",
+          "year": "2016"
+        },
+        {
+          "name": "Royal Giant",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/mnlRaNtmfpQx2e6mp70sLd0ND-pKPF70Cf87_agEKg4.png",
+          "year": "2016"
+        },
+        {
+          "name": "Elixir Golem",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/puhMsZjCIqy21HW3hYxjrk_xt8NIPyFqjRy-BeLKZwo.png",
+          "year": "2019"
+        },
+        {
+          "name": "Giant",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Axr4ox5_b7edmLsoHxBX3vmgijAIibuF6RImTbqLlXE.png",
+          "year": "2016"
+        },
+        {
+          "name": "Rune Giant",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/UogMnGHQXT-TOVXRxslKdAKXUPhqUvrD_hV9x8lbzdE.png",
+          "year": "2025"
+        },
+        {
+          "name": "Giant Skeleton",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/0p0gd0XaVRu1Hb1iSG1hTYbz2AN6aEiZnhaAib5O8Z8.png",
+          "year": "2016"
+        },
+        {
+          "name": "Goblin Giant",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/SoW16cY3jXBwaTDvb39DkqiVsoFVaDWbzf5QBYphJrY.png",
+          "year": "2018"
+        },
+        {
+          "name": "Electro Giant",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 7,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png",
+          "year": "2020"
+        }
+      ]
+    },
+    {
+      "name": "melee",
+      "cards": [
+        {
+          "name": "Skeletons",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 1,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png",
+          "year": "2016"
+        },
+        {
+          "name": "Goblins",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/X_DQUye_OaS3QN6VC9CPw05Fit7wvSm3XegXIXKP--0.png",
+          "year": "2016"
+        },
+        {
+          "name": "Berserker",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/NA6W8S1JBYBlOPwD3dNvJLFvVDKq-UuBs_J3i3ewLFI.png",
+          "year": "2025"
+        },
+        {
+          "name": "Knight",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png",
+          "year": "2016"
+        },
+        {
+          "name": "Goblin Gang",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png",
+          "year": "2016"
+        },
+        {
+          "name": "Barbarians",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/TvJsuu2S4yhyk1jVYUAQwdKOnW4U77KuWWOTPOWnwfI.png",
+          "year": "2016"
+        },
+        {
+          "name": "Royal Recruits",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 7,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/jcNyYGUiXXNz3kuz8NBkHNKNREQKraXlb_Ts7rhCIdM.png",
+          "year": "2018"
+        },
+        {
+          "name": "Mini P.E.K.K.A",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png",
+          "year": "2016"
+        },
+        {
+          "name": "Valkyrie",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png",
+          "year": "2016"
+        },
+        {
+          "name": "Battle Healer",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/KdwXcoigS2Kg-cgA7BJJIANbUJG6SNgjetRQ-MegZ08.png",
+          "year": "2020"
+        },
+        {
+          "name": "Guards",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/1ArKfLJxYo6_NU_S9cAeIrfbXqWH0oULVJXedxBXQlU.png",
+          "year": "2016"
+        },
+        {
+          "name": "Prince",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/3JntJV62aY0G1Qh6LIs-ek-0ayeYFY3VItpG7cb9I60.png",
+          "year": "2016"
+        },
+        {
+          "name": "P.E.K.K.A",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 7,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/MlArURKhn_zWAZY-Xj1qIRKLVKquarG25BXDjUQajNs.png",
+          "year": 2016
+        },
+        {
+          "name": "Goblin Giant",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/SoW16cY3jXBwaTDvb39DkqiVsoFVaDWbzf5QBYphJrY.png",
+          "year": "2018"
+        },
+        {
+          "name": "Miner",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Y4yWvdwBCg2FpAZgs8T09Gy34WOwpLZW-ttL52Ae8NE.png",
+          "year": "2016"
+        },
+        {
+          "name": "Bandit",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/QWDdXMKJNpv0go-HYaWQWP6p8uIOHjqn-zX7G0p3DyM.png",
+          "year": "2017"
+        },
+        {
+          "name": "Boss Bandit",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/nuceG9o7rAyvyc7D3sp2QSiRYtSOEgraq0NJkDf729s.png",
+          "year": "2025"
+        },
+        {
+          "name": "Lumberjack",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/E6RWrnCuk13xMX5OE1EQtLEKTZQV6B78d00y8PlXt6Q.png",
+          "year": "2016"
+        },
+        {
+          "name": "Night Witch",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/NpCrXDEDBBJgNv9QrBAcJmmMFbS7pe3KCY8xJ5VB18A.png",
+          "year": "2017"
+        },
+        {
+          "name": "Skeleton King",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/dCd69_wN9f8DxwuqOGtR4QgWhHIPIaTNxZ1e23RzAAc.png",
+          "year": "2021"
+        },
+        {
+          "name": "Golden Knight",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/WJd207D0O1sN-l1FTb8P9KhYL2oF5jY26vRUfTUW3FQ.png",
+          "year": "2021"
+        },
+        {
+          "name": "Mighty Miner",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Cd9R56yraxTvJiD8xJ2qT2OdsHyh94FqOAarXpbyelo.png",
+          "year": "2022"
+        },
+        {
+          "name": "Monk",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/2onG4t4-CxqwFVZAn6zpWxFz3_mG2ksSj4Q7zldo1SM.png",
+          "year": "2022"
+        }
+      ]
+    },
+    {
+      "name": "Mini tank",
+      "cards": [
+        {
+          "name": "Berserker",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/NA6W8S1JBYBlOPwD3dNvJLFvVDKq-UuBs_J3i3ewLFI.png",
+          "year": "2025"
+        },
+        {
+          "name": "Ice Golem",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/r05cmpwV1o7i7FHodtZwW3fmjbXCW34IJCsDEV5cZC4.png",
+          "year": "2016"
+        },
+        {
+          "name": "Mini P.E.K.K.A",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png",
+          "year": "2016"
+        },
+        {
+          "name": "Valkyrie",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png",
+          "year": "2016"
+        },
+        {
+          "name": "Knight",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png",
+          "year": "2016"
+        },
+        {
+          "name": "Skeleton King",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/dCd69_wN9f8DxwuqOGtR4QgWhHIPIaTNxZ1e23RzAAc.png",
+          "year": "2021"
+        },
+        {
+          "name": "Mighty Miner",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Cd9R56yraxTvJiD8xJ2qT2OdsHyh94FqOAarXpbyelo.png",
+          "year": "2022"
+        }
+      ]
+    },
+    {
+      "name": "light win con",
+      "cards": [
+        {
+          "name": "Wall Breakers",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/_xPphEfC8eEwFNrfU3cMQG9-f5JaLQ31ARCA7l3XtW4.png",
+          "year": "2019"
+        },
+        {
+          "name": "Skeleton Barrel",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png",
+          "year": "2017"
+        },
+        {
+          "name": "Miner",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Y4yWvdwBCg2FpAZgs8T09Gy34WOwpLZW-ttL52Ae8NE.png",
+          "year": "2016"
+        },
+        {
+          "name": "Battle Ram",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png",
+          "year": "2016"
+        },
+        {
+          "name": "Hog Rider",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Ubu0oUl8tZkusnkZf8Xv9Vno5IO29Y-jbZ4fhoNJ5oc.png",
+          "year": "2016"
+        },
+        {
+          "name": "Royal Hogs",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png",
+          "year": "2018"
+        }
+      ]
+    },
+    {
+      "name": "swarm",
+      "cards": [
+        {
+          "name": "Goblin Gang",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png",
+          "year": "2016"
+        },
+        {
+          "name": "Bats",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 2,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png",
+          "year": "2017"
+        },
+        {
+          "name": "Skeleton Army",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png",
+          "year": "2016"
+        },
+        {
+          "name": "Minion Horde",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/Wyjq5l0IXHTkX9Rmpap6HaH08MvjbxFp1xBO9a47YSI.png",
+          "year": "2016"
+        },
+        {
+          "name": "Royal Recruits",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 7,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/jcNyYGUiXXNz3kuz8NBkHNKNREQKraXlb_Ts7rhCIdM.png",
+          "year": "2018"
+        }
+      ]
+    }
+  ]
+}

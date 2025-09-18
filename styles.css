@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'ClashRoyale';
+  src: url('fonts/YouBlockhead.ttf') format('truetype'); /* Adjust the path */
+}
+
+.two-lines {
+    line-height: 1.2em;
+    min-height: 2.4em;
+}
+
+body {    
+    font-family: 'ClashRoyale', sans-serif;
+    background: #111;
+    color: white;
+    margin: 20px;
+}
+
+#card {
+    background: #222;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+#card img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
