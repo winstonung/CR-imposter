@@ -171,7 +171,7 @@ function showCard() {
         if (!imposterKnowsTheyreImposter) {
             document.getElementById("suggestions").innerText = `Your aim is to convince everyone that you are NOT the imposter. You may have a different card to the civillians, but you may also have the same card as the civillians. Try to blend in and avoid suspicion!`;
         } else {
-            document.getElementById("suggestions").innerText = `You are a civillian. Your aim is to find out who the imposter is! Try to spot who has a different card to you.`;
+            document.getElementById("suggestions").innerText = `You are a civillian. Your aim is to find out who the imposter is! Try to spot who has a different card to you, and make sure to avoid letting the imposter(s) figure out your card!`;
         }
     }
 }
