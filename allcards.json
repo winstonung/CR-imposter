@@ -12,7 +12,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Archers",
@@ -26,7 +26,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Goblins",
@@ -38,7 +38,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Giant",
@@ -50,7 +50,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "P.E.K.K.A",
@@ -76,7 +76,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Balloon",
@@ -88,7 +88,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Witch",
@@ -102,7 +102,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Barbarians",
@@ -116,7 +116,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Golem",
@@ -128,7 +128,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Skeletons",
@@ -142,7 +142,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Valkyrie",
@@ -156,7 +156,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Skeleton Army",
@@ -168,7 +168,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Bomber",
@@ -182,7 +182,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Musketeer",
@@ -196,7 +196,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Baby Dragon",
@@ -210,7 +210,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Prince",
@@ -222,7 +222,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Wizard",
@@ -236,7 +236,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Mini P.E.K.K.A",
@@ -248,7 +248,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Spear Goblins",
@@ -260,7 +260,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Giant Skeleton",
@@ -272,7 +272,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Hog Rider",
@@ -284,7 +284,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Minion Horde",
@@ -296,7 +296,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Ice Wizard",
@@ -308,7 +308,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Royal Giant",
@@ -322,7 +322,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Guards",
@@ -334,7 +334,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Princess",
@@ -346,7 +346,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Dark Prince",
@@ -358,7 +358,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Three Musketeers",
@@ -370,7 +370,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Lava Hound",
@@ -382,7 +382,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Ice Spirit",
@@ -396,7 +396,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Fire Spirit",
@@ -408,7 +408,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Miner",
@@ -420,7 +420,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Sparky",
@@ -432,7 +432,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Bowler",
@@ -444,7 +444,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Lumberjack",
@@ -458,7 +458,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Battle Ram",
@@ -472,7 +472,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Inferno Dragon",
@@ -486,7 +486,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Ice Golem",
@@ -498,7 +498,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Mega Minion",
@@ -510,7 +510,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Dart Goblin",
@@ -524,7 +524,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Goblin Gang",
@@ -536,7 +536,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Electro Wizard",
@@ -548,7 +548,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Elite Barbarians",
@@ -560,7 +560,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Hunter",
@@ -574,7 +574,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Executioner",
@@ -588,7 +588,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Bandit",
@@ -600,7 +600,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Royal Recruits",
@@ -614,7 +614,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2018"
+      "year": 2018
     },
     {
       "name": "Night Witch",
@@ -626,7 +626,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Bats",
@@ -640,7 +640,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Royal Ghost",
@@ -652,7 +652,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Ram Rider",
@@ -664,7 +664,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2018"
+      "year": 2018
     },
     {
       "name": "Zappies",
@@ -676,7 +676,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Rascals",
@@ -688,7 +688,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2018"
+      "year": 2018
     },
     {
       "name": "Cannon Cart",
@@ -700,7 +700,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Mega Knight",
@@ -714,7 +714,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Skeleton Barrel",
@@ -728,7 +728,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Flying Machine",
@@ -740,7 +740,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Wall Breakers",
@@ -754,7 +754,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2019"
+      "year": 2019
     },
     {
       "name": "Royal Hogs",
@@ -766,7 +766,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2018"
+      "year": 2018
     },
     {
       "name": "Goblin Giant",
@@ -780,7 +780,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2018"
+      "year": 2018
     },
     {
       "name": "Fisherman",
@@ -792,7 +792,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2019"
+      "year": 2019
     },
     {
       "name": "Magic Archer",
@@ -804,7 +804,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Electro Dragon",
@@ -818,7 +818,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2018"
+      "year": 2018
     },
     {
       "name": "Firecracker",
@@ -832,7 +832,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2020"
+      "year": 2020
     },
     {
       "name": "Mighty Miner",
@@ -844,7 +844,7 @@
       },
       "rarity": "champion",
       "type": "troop",
-      "year": "2022"
+      "year": 2022
     },
     {
       "name": "Elixir Golem",
@@ -856,7 +856,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2019"
+      "year": 2019
     },
     {
       "name": "Battle Healer",
@@ -868,7 +868,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2020"
+      "year": 2020
     },
     {
       "name": "Skeleton King",
@@ -880,7 +880,7 @@
       },
       "rarity": "champion",
       "type": "troop",
-      "year": "2021"
+      "year": 2021
     },
     {
       "name": "Archer Queen",
@@ -892,7 +892,7 @@
       },
       "rarity": "champion",
       "type": "troop",
-      "year": "2021"
+      "year": 2021
     },
     {
       "name": "Golden Knight",
@@ -904,7 +904,7 @@
       },
       "rarity": "champion",
       "type": "troop",
-      "year": "2021"
+      "year": 2021
     },
     {
       "name": "Monk",
@@ -916,7 +916,7 @@
       },
       "rarity": "champion",
       "type": "troop",
-      "year": "2022"
+      "year": 2022
     },
     {
       "name": "Skeleton Dragons",
@@ -928,7 +928,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2020"
+      "year": 2020
     },
     {
       "name": "Mother Witch",
@@ -940,7 +940,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2021"
+      "year": 2021
     },
     {
       "name": "Electro Spirit",
@@ -952,7 +952,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2020"
+      "year": 2020
     },
     {
       "name": "Electro Giant",
@@ -964,7 +964,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2020"
+      "year": 2020
     },
     {
       "name": "Phoenix",
@@ -976,7 +976,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2022"
+      "year": 2022
     },
     {
       "name": "Little Prince",
@@ -988,7 +988,7 @@
       },
       "rarity": "champion",
       "type": "troop",
-      "year": "2023"
+      "year": 2023
     },
     {
       "name": "Goblin Demolisher",
@@ -1000,7 +1000,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2024"
+      "year": 2024
     },
     {
       "name": "Goblin Machine",
@@ -1012,7 +1012,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2024"
+      "year": 2024
     },
     {
       "name": "Suspicious Bush",
@@ -1024,7 +1024,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2024"
+      "year": 2024
     },
     {
       "name": "Goblinstein",
@@ -1036,7 +1036,7 @@
       },
       "rarity": "champion",
       "type": "troop",
-      "year": "2024"
+      "year": 2024
     },
     {
       "name": "Rune Giant",
@@ -1048,7 +1048,7 @@
       },
       "rarity": "epic",
       "type": "troop",
-      "year": "2025"
+      "year": 2025
     },
     {
       "name": "Berserker",
@@ -1060,7 +1060,7 @@
       },
       "rarity": "common",
       "type": "troop",
-      "year": "2025"
+      "year": 2025
     },
     {
       "name": "Boss Bandit",
@@ -1072,7 +1072,7 @@
       },
       "rarity": "champion",
       "type": "troop",
-      "year": "2025"
+      "year": 2025
     },
     {
       "name": "Cannon",
@@ -1086,7 +1086,7 @@
       },
       "rarity": "common",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Goblin Hut",
@@ -1098,7 +1098,7 @@
       },
       "rarity": "rare",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Mortar",
@@ -1112,7 +1112,7 @@
       },
       "rarity": "common",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Inferno Tower",
@@ -1124,7 +1124,7 @@
       },
       "rarity": "rare",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Bomb Tower",
@@ -1136,7 +1136,7 @@
       },
       "rarity": "rare",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Barbarian Hut",
@@ -1148,7 +1148,7 @@
       },
       "rarity": "rare",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Tesla",
@@ -1162,7 +1162,7 @@
       },
       "rarity": "common",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Elixir Collector",
@@ -1174,7 +1174,7 @@
       },
       "rarity": "rare",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "X-Bow",
@@ -1186,7 +1186,7 @@
       },
       "rarity": "epic",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Tombstone",
@@ -1198,7 +1198,7 @@
       },
       "rarity": "rare",
       "type": "building",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Furnace",
@@ -1212,7 +1212,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2025"
+      "year": 2025
     },
     {
       "name": "Goblin Cage",
@@ -1226,7 +1226,7 @@
       },
       "rarity": "rare",
       "type": "building",
-      "year": "2019"
+      "year": 2019
     },
     {
       "name": "Goblin Drill",
@@ -1240,7 +1240,7 @@
       },
       "rarity": "epic",
       "type": "building",
-      "year": "2021"
+      "year": 2021
     },
     {
       "name": "Fireball",
@@ -1252,7 +1252,7 @@
       },
       "rarity": "rare",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Arrows",
@@ -1264,7 +1264,7 @@
       },
       "rarity": "common",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Rage",
@@ -1276,7 +1276,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Rocket",
@@ -1288,7 +1288,7 @@
       },
       "rarity": "rare",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Goblin Barrel",
@@ -1302,7 +1302,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Freeze",
@@ -1314,7 +1314,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Mirror",
@@ -1325,7 +1325,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Lightning",
@@ -1337,7 +1337,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Zap",
@@ -1351,7 +1351,7 @@
       },
       "rarity": "common",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Poison",
@@ -1363,7 +1363,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Graveyard",
@@ -1375,7 +1375,7 @@
       },
       "rarity": "legendary",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "The Log",
@@ -1387,7 +1387,7 @@
       },
       "rarity": "legendary",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Tornado",
@@ -1399,7 +1399,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Clone",
@@ -1411,7 +1411,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2016"
+      "year": 2016
     },
     {
       "name": "Earthquake",
@@ -1423,7 +1423,7 @@
       },
       "rarity": "rare",
       "type": "spell",
-      "year": "2019"
+      "year": 2019
     },
     {
       "name": "Barbarian Barrel",
@@ -1435,7 +1435,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2017"
+      "year": 2017
     },
     {
       "name": "Heal Spirit",
@@ -1447,7 +1447,7 @@
       },
       "rarity": "rare",
       "type": "troop",
-      "year": "2020"
+      "year": 2020
     },
     {
       "name": "Giant Snowball",
@@ -1461,7 +1461,7 @@
       },
       "rarity": "common",
       "type": "spell",
-      "year": "2018"
+      "year": 2018
     },
     {
       "name": "Royal Delivery",
@@ -1473,7 +1473,7 @@
       },
       "rarity": "common",
       "type": "spell",
-      "year": "2020"
+      "year": 2020
     },
     {
       "name": "Void",
@@ -1485,7 +1485,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2024"
+      "year": 2024
     },
     {
       "name": "Goblin Curse",
@@ -1497,7 +1497,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2024"
+      "year": 2024
     },
     {
       "name": "Spirit Empress",
@@ -1509,7 +1509,7 @@
       },
       "rarity": "legendary",
       "type": "troop",
-      "year": "2025"
+      "year": 2025
     },
     {
       "name": "Vines",
@@ -1521,7 +1521,7 @@
       },
       "rarity": "epic",
       "type": "spell",
-      "year": "2025"
+      "year": 2025
     }
   ]
 }
