@@ -41,14 +41,25 @@ function getRandomInt(min, max) {
 }
 
 function getRandomFromArray(arr) {
-    return arr[getRandomInt(0, arr.length)];
+    while (true) {
+        let potentialCard = arr[getRandomInt(0, arr.length)];
+        if (potentialCard.releaseYear <= latestYear) {
+            return potentialCard;
+        }
+    }
 }
 
 function generateGame() {
     fetch('groups.json')
         .then(response => response.json())
         .then(data => {
-            group = getRandomFromArray(data.groups);
+            while (true) {
+                group = getRandomFromArray(data.groups);
+                if (group.name === "champions" && latestYear < 2021) {
+                    continue;
+                }
+                break;
+            }
             cardData = data.cards;
             while (true) {
                 civillianCard = getRandomFromArray(group.cards);
