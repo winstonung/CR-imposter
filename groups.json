@@ -1,0 +1,29 @@
+{"groups": [
+    {"name": "Spirits",
+    "cards": [
+        {"name": "Ice Spirit",
+        "rarity": "common",
+        "type": "troop",
+        "elixir": 1,
+        "iconURL": "https://api-assets.clashroyale.com/cards/300/lv1budiafU9XmSdrDkk0NYyqASAFYyZ06CPysXKZXlA.png",
+        "year": 2016},
+        {"name": "Fire Spirit",
+        "rarity": "common",
+        "type": "troop",
+        "elixir": 1,
+        "iconURL": "https://api-assets.clashroyale.com/cards/300/16-BqusVvynIgYI8_Jci3LDC-r8AI_xaIYLgXqtlmS8.png",
+        "year": 2016},
+        {"name": "Electro Spirit",
+        "rarity": "common",
+        "type": "troop",
+        "elixir": 1,
+        "iconURL": "https://api-assets.clashroyale.com/cards/300/WKd4-IAFsgPpMo7dDi9sujmYjRhOMEWiE07OUJpvD9g.png",
+        "year": 2020},
+        {"name": "Heal Spirit",
+        "rarity": "common",
+        "type": "troop",
+        "elixir": 1,
+        "iconURL": "https://api-assets.clashroyale.com/cards/300/GITl06sa2nGRLPvboyXbGEv5E3I-wAwn1Eqa5esggbc.png",
+        "year": 2020}
+    ]}
+]}

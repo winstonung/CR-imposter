@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Group Editor</title>
+    <link rel="stylesheet" href="groups.css">
+</head>
+
+<body>
+    <h1>Available Groups</h1>
+    <div id="groupsContainer"></div>
+
+    <h2>Create Group</h2>
+    <form id="groupForm">
+        <label>
+            Group Name:
+            <input type="text" id="groupName" required autocomplete="off">
+        </label>
+        <button id="submitGroupBtn" type="button">Create Group</button>
+    </form>
+
+    <h2>Export</h2>
+    <button id="exportBtn">Download groups.json</button>
+
+    <div id="overlay" class="hidden">
+    <div id="overlayContent">
+        <h2>Select a Card</h2>
+        <img id="cardPreview" src="" alt="Card Preview" style="display:none; width:60px; height:auto;">
+        <input type="text" id="cardSearch" placeholder="Search for a card..." autocomplete="off">
+        <div id="searchResults"></div>
+        <br><br>
+        <button id="overlayConfirmBtn">Confirm</button>
+        <button id="overlayCancelBtn">Cancel</button>
+    </div>
+    </div>
+
+
+    <script src="groups.js"></script>
+</body>
+
+</html>
