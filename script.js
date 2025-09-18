@@ -41,12 +41,7 @@ function getRandomInt(min, max) {
 }
 
 function getRandomFromArray(arr) {
-    while (true) {
-        let potentialCard = arr[getRandomInt(0, arr.length)];
-        if (potentialCard.releaseYear <= latestYear) {
-            return potentialCard;
-        }
-    }
+    return arr[getRandomInt(0, arr.length)];
 }
 
 function generateGame() {
@@ -62,9 +57,19 @@ function generateGame() {
             }
             cardData = data.cards;
             while (true) {
-                civillianCard = getRandomFromArray(group.cards);
+                while (true) {
+                    civillianCard = getRandomFromArray(group.cards);
+                    if (civillianCard.year <= latestYear) {
+                        break;
+                    }
+                }
                 if (!imposterKnowsTheyreImposter) {
-                    imposterCard = getRandomFromArray(group.cards);
+                    while (true) {
+                        imposterCard = getRandomFromArray(group.cards);
+                        if (imposterCard.year <= latestYear) {
+                            break;
+                        }
+                    }
                     if (imposterCard.name !== civillianCard.name) {
                         break;
                     }
