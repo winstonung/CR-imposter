@@ -1,31 +1,114 @@
 @font-face {
   font-family: 'ClashRoyale';
-  src: url('fonts/YouBlockhead.ttf') format('truetype'); /* Adjust the path */
+  src: url('fonts/YouBlockhead.ttf') format('truetype'); /* Adjust path if needed */
 }
 
+/* General layout */
+body {
+  font-family: 'ClashRoyale', sans-serif;
+  font-variant-numeric: lining-nums; /* Try to normalize digits */
+  background: #111;
+  color: white;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0.5em;
+}
+
+/* Utility classes */
 .two-lines {
-    line-height: 1.2em;
-    min-height: 2.4em;
+  line-height: 1.2em;
+  min-height: 2.4em;
 }
 
-body {    
-    font-family: 'ClashRoyale', sans-serif;
-    background: #111;
-    color: white;
-    margin: 20px;
-}
-
+/* Card display */
 #card {
-    background: #222;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 120px;
+  background: #222;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
 }
 
 #card img {
-    width: 80px;
-    height: auto;
-    object-fit: contain;
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+input[type="number"], select {
+    margin-top: 0.5em;
+    padding: 0.5em;
     border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 50%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+
+/* Settings panel */
+#settings {
+  margin: 1em 0;
+}
+
+#settings label {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+
+/* Buttons */
+button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:hover {
+  background: #666;
+}
+
+/* Center content in instruction and card screens */
+#instruction-screen1,
+#card-screen,
+#instruction-screen2 {
+  display: flex;
+  flex-direction: column;   /* Stack elements vertically */
+  justify-content: center;  /* Center vertically */
+  align-items: center;      /* Center horizontally */
+  min-height: 100vh;        /* Full viewport height */
+  text-align: center;       /* Center text */
+}
+
+#card {
+  width: 120px;
+  margin: 0.5rem auto;       /* horizontal centering in flow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* center children horizontally */
+  justify-content: center;   /* center children vertically inside the card */
+  background: #222;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+h2, #instruction-screen1 p,
+#card-screen p,
+#instruction-screen2 p{
+    max-width: 300px; /* or any width you want */
+    overflow-wrap: break-word;
+    margin: 0.5rem auto;       /* horizontal centering in flow */
 }
