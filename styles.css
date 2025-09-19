@@ -4,12 +4,13 @@
 }
 
 /* General layout */
-body {
+html,body {
   font-family: 'ClashRoyale', sans-serif;
   font-variant-numeric: lining-nums; /* Try to normalize digits */
   background: #111;
   color: white;
-  margin: 20px;
+  margin: 0px;
+  height: 100%;
 }
 
 h1 {
@@ -83,14 +84,17 @@ button:hover {
 /* Center content in instruction and card screens */
 #instruction-screen1,
 #card-screen,
-#instruction-screen2 {
+#instruction-screen2,
+#passing-phone-screen {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;   /* Stack elements vertically */
-  justify-content: center;  /* Center vertically */
-  align-items: center;      /* Center horizontally */
-  min-height: 100vh;        /* Full viewport height */
-  text-align: center;       /* Center text */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 }
+
 
 #card {
   width: 120px;
@@ -107,13 +111,23 @@ button:hover {
 
 h2, #instruction-screen1 p,
 #card-screen p,
-#instruction-screen2 p{
+#instruction-screen2 p,
+#passing-phone-screen button {
     max-width: 300px; /* or any width you want */
     overflow-wrap: break-word;
     margin: 0.5rem auto;       /* horizontal centering in flow */
 }
 
-@media (max-width: 400px) {
+#passing-phone-screen button,
+#instructions1-showcard,
+#card-screen-next,
+#instructions2-showcard,
+#instructions2-next {
+  aspect-ratio: 1 / 1;
+  min-height: 130px;
+}
+
+@media (max-width: 420px) {
     input[type="number"], select {
     margin-top: 0.5em;
     padding: 0.5em;

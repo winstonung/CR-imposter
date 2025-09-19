@@ -96,21 +96,17 @@ function generateGame() {
 index = 0;
 
 function showInstructions1() {
+    document.getElementById("instructions1-text").innerText = `You are Player ${index + 1}. When you're ready, click "Show Card".`;
     document.getElementById("title-screen").style.display = "none";
     document.getElementById("instruction-screen2").style.display = "none";
     document.getElementById("instruction-screen1").style.display = "block";
-    document.getElementById("instructions1-text").innerText = `You are Player ${index + 1}. When you're ready, click "Show Card".`;
 }
 
 function showCard() {
-    document.getElementById("instruction-screen1").style.display = "none";
-    document.getElementById("instruction-screen2").style.display = "none";
-    document.getElementById("card-screen").style.display = "block";
 
     if (impostersIndexes.includes(index)) {
         if (!imposterKnowsTheyreImposter) {
             document.getElementById("card-title").innerText = `Your Card`;
-            document.getElementById("card").style.display = "block";
             document.getElementById("card-icon").src = imposterCard.iconURL;
             document.getElementById("card-name").innerHTML = `<strong>${imposterCard.name}</strong>`;
             document.getElementById("rarity-type").innerText = `${imposterCard.rarity} ${imposterCard.type}`;
@@ -135,9 +131,8 @@ function showCard() {
             }
             document.getElementById("elixir").innerText = `${imposterCard.elixir} Elixir`;
             document.getElementById("suggestions").innerText = `Your aim is to convince everyone that you are NOT the imposter. You may have a different card to the civillians, but you may also have the same card as the civillians. Try to blend in and avoid suspicion!`;
-        } else {
-            document.getElementById("card-title").style.display = "block";
             document.getElementById("card").style.display = "block";
+        } else {
             document.getElementById("card-icon").src = "images/MysteryCard.png";
             document.getElementById("card-name").innerHTML = `<strong>No card</strong>`;
             document.getElementById("rarity-type").innerText = `No rarity - No type`;
@@ -146,10 +141,11 @@ function showCard() {
 
             document.getElementById("card-title").innerText = `You are the imposter!`;
             document.getElementById("suggestions").innerText = `Your aim is to convince everyone that you are NOT the imposter. You do not know what the civillian card is, so try to blend in and avoid suspicion!`;
+            document.getElementById("card-title").style.display = "block";
+            document.getElementById("card").style.display = "block";
         }
     } else {
         document.getElementById("card-title").innerText = `Your Card`;            
-        document.getElementById("card").style.display = "block";
         document.getElementById("card-icon").src = civillianCard.iconURL;
         document.getElementById("card-name").innerHTML = `<strong>${civillianCard.name}</strong>`;
         document.getElementById("rarity-type").innerText = `${civillianCard.rarity} ${civillianCard.type}`;
@@ -178,13 +174,35 @@ function showCard() {
         } else {
             document.getElementById("suggestions").innerText = `You are a civillian. Your aim is to find out who the imposter is! Try to spot who has a different card to you, and make sure to avoid letting the imposter(s) figure out your card!`;
         }
+        document.getElementById("card").style.display = "block";
     }
+
+
+    setTimeout(() => {
+        document.getElementById("instruction-screen1").style.display = "none";
+        document.getElementById("instruction-screen2").style.display = "none";
+        document.getElementById("card-screen").style.display = "block";
+    }, 20);
 }
 
 function showInstructions2() {
+    document.getElementById("instructions2-text").innerText = `You are Player ${index + 1}. To view your card again, click "Show Card". Before you pass the phone to the next player, click "Next".`;
     document.getElementById("card-screen").style.display = "none";
     document.getElementById("instruction-screen2").style.display = "block";
-    document.getElementById("instructions2-text").innerText = `You are Player ${index + 1}. To view your card again, click "Show Card". Before you pass the phone to the next player, click "Next".`;
+}
+
+function showPassingPhoneScreen() {
+    document.getElementById("passing-phone-title").innerText = `Pass the phone to Player ${index + 1}`;
+    document.getElementById("passing-phone-next").innerText = `Next`;
+
+    document.getElementById("card-screen").style.display = "none";
+    document.getElementById("instruction-screen2").style.display = "none";
+    document.getElementById("passing-phone-next").style.display = "none";
+    document.getElementById("passing-phone-screen").style.display = "block";
+
+    setTimeout(() => {
+        document.getElementById("passing-phone-next").style.display = "block";
+    },  3000);
 }
 
 document.getElementById("instructions1-showcard").addEventListener("click", () => {
@@ -205,6 +223,10 @@ document.getElementById("instructions2-next").addEventListener("click", () => {
         alert("All players have seen their cards. The game is ready to start!");
         document.getElementById("instructions2-showcard").style.display = "none";
     } else {
-        showInstructions1();
+        showPassingPhoneScreen();
     }
+});
+
+document.getElementById("passing-phone-next").addEventListener("click", () => {
+    showInstructions1();
 });
