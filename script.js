@@ -182,7 +182,7 @@ function showCard() {
         document.getElementById("instruction-screen1").style.display = "none";
         document.getElementById("instruction-screen2").style.display = "none";
         document.getElementById("card-screen").style.display = "block";
-    }, 20);
+    }, 30);
 }
 
 function showInstructions2() {
@@ -202,7 +202,7 @@ function showPassingPhoneScreen() {
 
     setTimeout(() => {
         document.getElementById("passing-phone-next").style.display = "block";
-    },  3000);
+    },  2500);
 }
 
 document.getElementById("instructions1-showcard").addEventListener("click", () => {

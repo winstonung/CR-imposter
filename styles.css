@@ -118,7 +118,8 @@ h2, #instruction-screen1 p,
     margin: 0.5rem auto;       /* horizontal centering in flow */
 }
 
-#passing-phone-screen button,
+#start-button,
+#passing-phone-next,
 #instructions1-showcard,
 #card-screen-next,
 #instructions2-showcard,
