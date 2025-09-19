@@ -109,7 +109,8 @@ function showOverlay(cards, index) {
             "type": card.type,
             "elixir": card.elixirCost || "?",
             "iconURL": card.iconUrls.medium,
-            "year": card.year
+            "year": card.year,
+            "arena": card.arena
         }
 
         document.getElementById("cardPreview").style.display = "block";
