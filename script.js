@@ -137,7 +137,12 @@ function showCard() {
             document.getElementById("suggestions").innerText = `Your aim is to convince everyone that you are NOT the imposter. You may have a different card to the civillians, but you may also have the same card as the civillians. Try to blend in and avoid suspicion!`;
         } else {
             document.getElementById("card-title").style.display = "block";
-            document.getElementById("card").style.display = "none";
+            document.getElementById("card").style.display = "block";
+            document.getElementById("card-icon").src = "images/MysteryCard.png";
+            document.getElementById("card-name").innerHTML = `<strong>No card</strong>`;
+            document.getElementById("rarity-type").innerText = `No rarity - No type`;
+            document.getElementById("rarity-type").style.color = "#ffffff";
+            document.getElementById("elixir").innerText = `0 Elixir`;
 
             document.getElementById("card-title").innerText = `You are the imposter!`;
             document.getElementById("suggestions").innerText = `Your aim is to convince everyone that you are NOT the imposter. You do not know what the civillian card is, so try to blend in and avoid suspicion!`;

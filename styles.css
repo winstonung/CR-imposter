@@ -112,3 +112,17 @@ h2, #instruction-screen1 p,
     overflow-wrap: break-word;
     margin: 0.5rem auto;       /* horizontal centering in flow */
 }
+
+@media (max-width: 400px) {
+    input[type="number"], select {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 50%;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 16px
+}
+
+}
