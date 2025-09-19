@@ -218,7 +218,7 @@
           "type": "spell",
           "elixir": 2,
           "iconURL": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png",
-          "year": 2017
+          "year": 2018
         },
         {
           "name": "Poison",
@@ -465,7 +465,7 @@
           "type": "troop",
           "elixir": 4,
           "iconURL": "https://api-assets.clashroyale.com/cards/300/Avli3W7BxU9HQ2SoLiXnBgGx25FoNXUSFm7OcAk68ek.png",
-          "year": 2017
+          "year": 2018
         },
         {
           "name": "Mother Witch",
@@ -473,7 +473,7 @@
           "type": "troop",
           "elixir": 4,
           "iconURL": "https://api-assets.clashroyale.com/cards/300/fO-Xah8XZkYKaSK9SCp3wnzwxtvIhun9NVY-zzte1Ng.png",
-          "year": 2021
+          "year": 2020
         },
         {
           "name": "Wizard",

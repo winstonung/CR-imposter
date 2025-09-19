@@ -22,6 +22,11 @@ h2 {
   margin-top: 0.5em;
 }
 
+a {
+  color: #4EA1FF;
+  text-decoration: none;
+}
+
 /* Utility classes */
 .two-lines {
   line-height: 1.2em;
