@@ -551,6 +551,14 @@
           "elixir": 6,
           "iconURL": "https://api-assets.clashroyale.com/cards/300/2GKMkBrArZXgQxf2ygFjDs4VvGYPbx8F6Lj_68iVhIM.png",
           "year": 2016
+        },
+        {
+          "name": "Elite Barbarians",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/C88C5JH_F3lLZj6K-tLcMo5DPjrFmvzIb1R2M6xCfTE.png",
+          "year": 2016
         }
       ]
     },
