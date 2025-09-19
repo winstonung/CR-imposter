@@ -9,7 +9,7 @@ html,body {
   font-variant-numeric: lining-nums; /* Try to normalize digits */
   background: #111;
   color: white;
-  margin: 0px;
+  margin: 20px;
   height: 100%;
 }
 

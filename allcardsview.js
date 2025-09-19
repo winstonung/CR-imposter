@@ -12,10 +12,12 @@ let years = {
     2025: []
 };
 const container = document.getElementById("container");
+
 let selectedShowUsed = document.getElementById("show-used").value;
 let selectedSortBy = document.getElementById("sort-by").value;
 let showYears = document.getElementById("show-years").checked;
 let sortOrder = document.getElementById("sort-order").textContent.trim();
+let highlightCards = document.getElementById("obtainable-indicator").checked;
 
 fetch("allcards.json")
     .then(response => response.json())
@@ -39,14 +41,14 @@ fetch("allcards.json")
                 Object.values(allCards).forEach(card => {
                     years[card.year].push(card);
                 });
-                renderGroup(selectedShowUsed, showYears);
+                renderGroup();
             })
             .catch(err => console.error("Error loading groups.json:", err));
     })
     .catch(err => console.error("Error loading allcards.json:", err));
 
 
-function renderGroup(selectedValue = "all", showYears=true) {
+function renderGroup() {
     container.innerHTML = ""; // clear first
     let dataToRender;
 
@@ -111,21 +113,23 @@ function renderGroup(selectedValue = "all", showYears=true) {
             if (!showYears){
                 cardDiv.insertAdjacentHTML("beforeend", `<p>${card.year}</p>`);
             }
-            if (allCards[card.name].inGroup) {
-                cardDiv.style.backgroundColor = "#2ecb53ff";
-            } else {
-                cardDiv.style.backgroundColor = "#cb2e2eff";
+            if (highlightCards) {
+                if (allCards[card.name].inGroup) {
+                    cardDiv.style.backgroundColor = "#2ecb53ff";
+                } else {
+                    cardDiv.style.backgroundColor = "#cb2e2eff";
+                }
             }
 
             cardDiv.addEventListener("click", () => {
                 window.open(`https://clashroyale.fandom.com/wiki/${card.name.replace(/\s+/g, "_")}`, "_blank");
             });
 
-            if (selectedValue === "all") {
+            if (selectedShowUsed === "all") {
                 cardsDiv.appendChild(cardDiv);
-            } else if (selectedValue === "in-group" && card.inGroup) {
+            } else if (selectedShowUsed === "in-group" && card.inGroup) {
                 cardsDiv.appendChild(cardDiv);
-            } else if (selectedValue === "not-in-group" && !card.inGroup) {
+            } else if (selectedShowUsed === "not-in-group" && !card.inGroup) {
                 cardsDiv.appendChild(cardDiv);
             }
         });
@@ -173,17 +177,22 @@ function sortBy(arr, order = "rarity") {
 
 document.getElementById("show-used").addEventListener("change", (event) => {
     selectedShowUsed = event.target.value;
-    renderGroup(selectedShowUsed, showYears);
+    renderGroup();
 });
 
 document.getElementById("sort-by").addEventListener("change", (event) => {
     selectedSortBy = event.target.value;
-    renderGroup(selectedShowUsed, showYears);
+    renderGroup();
 });
 
 document.getElementById("show-years").addEventListener("click", (event) => {
     showYears = event.target.checked;
-    renderGroup(selectedShowUsed, showYears);
+    renderGroup();
+});
+
+document.getElementById("obtainable-indicator").addEventListener("click", (event) => {
+    highlightCards = event.target.checked;
+    renderGroup();
 });
 
 document.getElementById("sort-order").addEventListener("click", (event) => {
@@ -194,7 +203,7 @@ document.getElementById("sort-order").addEventListener("click", (event) => {
         sortOrder = "Ascending";
         event.target.textContent = "Ascending";
     }
-    renderGroup(selectedShowUsed, showYears);
+    renderGroup();
 });
 
 const randomCard = document.getElementById("random-card");
@@ -226,6 +235,7 @@ randomCard.addEventListener("click", () => {
             <p class="two-lines"><strong>${card.name}</strong></p>
             <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
             <p style="color: #da52f2">Elixir: ?</p>
+            <p>${card.year}</p>
         `  ;
     } else {
         randomCard.innerHTML = `
@@ -233,9 +243,7 @@ randomCard.addEventListener("click", () => {
             <p class="two-lines"><strong>${card.name}</strong></p>
             <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
             <p style="color: #da52f2">Elixir: ${card.elixirCost}</p>
+            <p>${card.year}</p>
     `;
-    }
-    if (!showYears){
-        randomCard.insertAdjacentHTML("beforeend", `<p>${card.year}</p>`);
     }
 });
