@@ -1410,6 +1410,123 @@
           "arena": 7
         }
       ]
+    },
+    {
+      "name": "Nobility",
+      "cards": [
+        {
+          "name": "Knight",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png",
+          "year": 2016
+        },
+        {
+          "name": "Royal Giant",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/mnlRaNtmfpQx2e6mp70sLd0ND-pKPF70Cf87_agEKg4.png",
+          "year": 2016
+        },
+        {
+          "name": "Royal Recruits",
+          "rarity": "common",
+          "type": "troop",
+          "elixir": 7,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/jcNyYGUiXXNz3kuz8NBkHNKNREQKraXlb_Ts7rhCIdM.png",
+          "year": 2018
+        },
+        {
+          "name": "Royal Hogs",
+          "rarity": "rare",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png",
+          "year": 2018
+        },
+        {
+          "name": "Dark Prince",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/M7fXlrKXHu2IvpSGpk36kXVstslbR08Bbxcy0jQcln8.png",
+          "year": 2016
+        },
+        {
+          "name": "Prince",
+          "rarity": "epic",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/3JntJV62aY0G1Qh6LIs-ek-0ayeYFY3VItpG7cb9I60.png",
+          "year": 2016
+        },
+        {
+          "name": "Mega Knight",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 7,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png",
+          "year": 2017
+        },
+        {
+          "name": "Princess",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/bAwMcqp9EKVIKH3ZLm_m0MqZFSG72zG-vKxpx8aKoVs.png",
+          "year": 2016
+        },
+        {
+          "name": "Royal Ghost",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/3En2cz0ISQAaMTHY3hj3rTveFN2kJYq-H4VxvdJNvCM.png",
+          "year": 2018
+        },
+        {
+          "name": "Spirit Empress",
+          "rarity": "legendary",
+          "type": "troop",
+          "elixir": 6,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/MWWBZqiQeRBXSqEITVMj46nO_uCIUsqBidvUw9K2twY.png",
+          "year": 2025
+        },
+        {
+          "name": "Golden Knight",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/WJd207D0O1sN-l1FTb8P9KhYL2oF5jY26vRUfTUW3FQ.png",
+          "year": 2021
+        },
+        {
+          "name": "Skeleton King",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 4,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/dCd69_wN9f8DxwuqOGtR4QgWhHIPIaTNxZ1e23RzAAc.png",
+          "year": 2021
+        },
+        {
+          "name": "Archer Queen",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 5,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/p7OQmOAFTery7zCzlpDdm-LOD1kINTm42AwIHchZfWk.png",
+          "year": 2021
+        },
+        {
+          "name": "Little Prince",
+          "rarity": "champion",
+          "type": "troop",
+          "elixir": 3,
+          "iconURL": "https://api-assets.clashroyale.com/cards/300/dY-gSseki6KBpkIG17safHH5YlB8SErFZO9OXbJxf9w.png",
+          "year": 2023
+        }
+      ]
     }
   ]
 }
