@@ -15,8 +15,19 @@ a {
   text-decoration: none;
 }
 
-select {
+select, button {
     font-family: inherit;
+}
+
+button {
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #666;
 }
 
 .cards {

@@ -15,6 +15,7 @@ const container = document.getElementById("container");
 let selectedShowUsed = document.getElementById("show-used").value;
 let selectedSortBy = document.getElementById("sort-by").value;
 let showYears = document.getElementById("show-years").checked;
+let sortOrder = document.getElementById("sort-order").textContent.trim();
 
 fetch("allcards.json")
     .then(response => response.json())
@@ -92,12 +93,21 @@ function renderGroup(selectedValue = "all", showYears=true) {
                     colour = "#ffffff";
             }
             cardDiv.classList.add("card");
-            cardDiv.innerHTML = `
-                <img src="${card.iconUrls.medium}" alt="${card.name}">
-                <p class="two-lines"><strong>${card.name}</strong></p>
-                <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
-                <p style="color: #da52f2">Elixir: ${card.elixirCost}</p>
+            if (card.name === "Mirror") {
+                cardDiv.innerHTML = `
+                    <img src="${card.iconUrls.medium}" alt="${card.name}">
+                    <p class="two-lines"><strong>${card.name}</strong></p>
+                    <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+                    <p style="color: #da52f2">Elixir: ?</p>
+                `  ;
+            } else {
+                cardDiv.innerHTML = `
+                    <img src="${card.iconUrls.medium}" alt="${card.name}">
+                    <p class="two-lines"><strong>${card.name}</strong></p>
+                    <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+                    <p style="color: #da52f2">Elixir: ${card.elixirCost}</p>
             `;
+            }
             if (!showYears){
                 cardDiv.insertAdjacentHTML("beforeend", `<p>${card.year}</p>`);
             }
@@ -129,14 +139,30 @@ function sortBy(arr, order = "rarity") {
     const rarityOrder = ["common", "rare", "epic", "legendary", "champion"];
     const typeOrder = ["troop", "spell", "building"];
 
+    let multiplier = 1;
+    if (sortOrder === "Descending") {
+        multiplier = -1;
+    }
+
     // Define a single sort function
     const sortFunction = (a, b) => {
-        if (order === "rarity") return rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity);
-        if (order === "name") return a.name.localeCompare(b.name);
-        if (order === "elixir") return a.elixirCost - b.elixirCost;
-        if (order === "type") {
-            if (a.type === b.type) return a.name.localeCompare(b.name); // tie-breaker
-            return typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
+        if (order === "rarity") {
+            return (rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity) ||
+                a.elixirCost - b.elixirCost ||
+                a.arena - b.arena ||
+                Object.keys(allCards).indexOf(a.name) - Object.keys(allCards).indexOf(b.name)) * multiplier;
+        };
+        if (order === "name") return a.name.localeCompare(b.name) * multiplier;
+        if (order === "elixir") {
+            return (a.elixirCost - b.elixirCost  ||
+                a.arena - b.arena ||
+                rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity) ||
+                Object.keys(allCards).indexOf(a.name) - Object.keys(allCards).indexOf(b.name)) * multiplier;
+        }
+        if (order === "arena") {
+            return (a.arena - b.arena ||
+                rarityOrder.indexOf(a.rarity) - rarityOrder.indexOf(b.rarity) ||
+                Object.keys(allCards).indexOf(a.name) - Object.keys(allCards).indexOf(b.name)) * multiplier;
         }
         return 0;
     };
@@ -158,4 +184,58 @@ document.getElementById("sort-by").addEventListener("change", (event) => {
 document.getElementById("show-years").addEventListener("click", (event) => {
     showYears = event.target.checked;
     renderGroup(selectedShowUsed, showYears);
+});
+
+document.getElementById("sort-order").addEventListener("click", (event) => {
+    if (sortOrder === "Ascending") {
+        sortOrder = "Descending";
+        event.target.textContent = "Descending";
+    } else {
+        sortOrder = "Ascending";
+        event.target.textContent = "Ascending";
+    }
+    renderGroup(selectedShowUsed, showYears);
+});
+
+const randomCard = document.getElementById("random-card");
+randomCard.addEventListener("click", () => {
+    let card = allCards[Object.keys(allCards)[Math.floor(Math.random() * Object.keys(allCards).length)]];
+    let colour = "";
+        switch (card.rarity) {
+            case "common":
+                colour = "#888888";
+                break;
+            case "rare":
+                colour = "#f2a843";
+                break;
+            case "epic":
+                colour = "#a421ad";
+                break;
+            case "legendary":
+                colour = "#73cbfa";
+                break;
+            case "champion":
+                colour = "#f6c543";
+                break;
+            default:
+                colour = "#ffffff";
+        }
+    if (card.name === "Mirror") {
+        randomCard.innerHTML = `
+            <img src="${card.iconUrls.medium}" alt="${card.name}">
+            <p class="two-lines"><strong>${card.name}</strong></p>
+            <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+            <p style="color: #da52f2">Elixir: ?</p>
+        `  ;
+    } else {
+        randomCard.innerHTML = `
+            <img src="${card.iconUrls.medium}" alt="${card.name}">
+            <p class="two-lines"><strong>${card.name}</strong></p>
+            <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+            <p style="color: #da52f2">Elixir: ${card.elixirCost}</p>
+    `;
+    }
+    if (!showYears){
+        randomCard.insertAdjacentHTML("beforeend", `<p>${card.year}</p>`);
+    }
 });

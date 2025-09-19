@@ -12,6 +12,13 @@
     <h3>Obtainable cards are highlighted in green, all other cards are highlighted in red.</h3>
     <a href="index.html">Play Imposter by clicking this link (opens in same window).</a>    
     <br><br>
+    <div class="card" id="random-card">
+        <img src="images/MysteryCard.png">
+        <p class="two-lines"><strong>Generate card</strong></p>
+        <p style="color: #888888;" class="two-lines">no rarity - no type</p>
+        <p style="color: #da52f2">Elixir: ?</p>
+    </div>
+    <br><br>
     <label for="show-used">Show cards</label>
     <select id="show-used">
         <option value="all">All cards</option>
@@ -21,11 +28,12 @@
     <br>
     <label for="sort-by">Sort by</label>
     <select id="sort-by">
+        <option value="elixir">Elixir</option>
         <option value="rarity">Rarity</option>
         <option value="name">Name</option>
-        <option value="elixir">Elixir Cost</option>
-        <option value="type">Type</option>
+        <option value="arena">Arena</option>
     </select>
+    <button id="sort-order">Ascending</button>
     <br>
     <label for="show-years">Show years</label>
     <input type="checkbox" id="show-years" value="1" checked>

@@ -107,7 +107,7 @@ function showOverlay(cards, index) {
             "name": card.name,
             "rarity": card.rarity,
             "type": card.type,
-            "elixir": card.elixirCost,
+            "elixir": card.elixirCost || "?",
             "iconURL": card.iconUrls.medium,
             "year": card.year
         }
@@ -184,13 +184,23 @@ function renderGroups(data) {
                     colour = "#ffffff";
             }
             cardDiv.classList.add("card");
-            cardDiv.innerHTML = `
-                <img src="${card.iconURL}" alt="${card.name}">
-                <p class="two-lines"><strong>${card.name}</strong></p>
-                <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
-                <p style="color: #da52f2">Elixir: ${card.elixir}</p>
-                <p>${card.year}</p>
+            if (card.name === "Mirror") {
+                cardDiv.innerHTML = `
+                    <img src="${card.iconURL}" alt="${card.name}">
+                    <p class="two-lines"><strong>${card.name}</strong></p>
+                    <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+                    <p style="color: #da52f2">Elixir: ?</p>
+                    <p>${card.year}</p>
+                `  ;
+            } else {
+                cardDiv.innerHTML = `
+                    <img src="${card.iconURL}" alt="${card.name}">
+                    <p class="two-lines"><strong>${card.name}</strong></p>
+                    <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+                    <p style="color: #da52f2">Elixir: ${card.elixir}</p>
+                    <p>${card.year}</p>
             `;
+            }
             cardsDiv.appendChild(cardDiv);
             cardDiv.addEventListener("click", () => {
                 if (confirm(`Are you sure you want to remove ${card.name}?`)) {

@@ -24,7 +24,7 @@ function getCurrentCard() {
 }
 
 function cardHasDetails(card) {
-    if (card.year && card.type) {
+    if (card.arena >= 0) {
         return true;
     }
     return false;
@@ -37,11 +37,9 @@ function displayCurrentCard() {
 }
 
 document.getElementById("save").addEventListener("click", () => {
-    let troop = document.getElementById("Type").value;
-    let year = document.getElementById("Year").value;
+    let arena = parseInt(document.getElementById("arena").value);
 
-    getCurrentCard().type = troop;
-    getCurrentCard().year = year;
+    getCurrentCard().arena = arena;
 
     while (true) {
         currentIndex++;
@@ -52,13 +50,35 @@ document.getElementById("save").addEventListener("click", () => {
     displayCurrentCard();
 });
 
+
+const arenaSelect = document.getElementById("arena");
+
+document.addEventListener("keydown", (event) => {
+    let currentIndex = arenaSelect.selectedIndex;
+
+    if (event.key === "ArrowUp") {
+        event.preventDefault();
+        if (currentIndex > 0) {
+            arenaSelect.selectedIndex = currentIndex - 1;
+        }
+    } else if (event.key === "ArrowDown") {
+        event.preventDefault();
+        if (currentIndex < arenaSelect.options.length - 1) {
+            arenaSelect.selectedIndex = currentIndex + 1;
+        }
+    } else if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("save").click();
+    }
+});
+
 document.getElementById("exportBtn").addEventListener("click", () => {
-    const blob = new Blob([JSON.stringify({"items": allCards}, null, 2)], { type: "application/json" });
+    const blob = new Blob([JSON.stringify({ "items": allCards }, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
 
     const a = document.createElement("a");
     a.href = url;
-    a.download = "groupsTest1.json";
+    a.download = "allCardsTest1.json";
     a.click();
     URL.revokeObjectURL(url);
 });
