@@ -128,8 +128,8 @@ h2, #instruction-screen1 p,
   min-height: 130px;
 }
 
-@media (max-width: 420px) {
-    input[type="tel"], select {
+@media (max-width: 450px) {
+    #num-players, #num-imposters, select {
     margin-top: 0.5em;
     padding: 0.5em;
     border-radius: 6px;
