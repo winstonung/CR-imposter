@@ -49,6 +49,12 @@ button:hover {
     gap: 15px;
 }
 
+.compact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
 .card {
     background: #222;
     border-radius: 10px;
@@ -58,8 +64,8 @@ button:hover {
 }
 
 .compact-card {
-    border-radius: 2px;
-    text-align: center;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .card img{
@@ -70,7 +76,7 @@ button:hover {
 }
 
 .compact-card img  {
-  width: min(80px, 15vw);
+  width: min(80px, 20vw);
   height: auto;
   object-fit: contain;
 }

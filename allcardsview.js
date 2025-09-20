@@ -108,7 +108,11 @@ function renderGroup() {
 
         // cards
         const cardsDiv = document.createElement("div");
-        cardsDiv.classList.add("cards");
+        if (standardView) {
+            cardsDiv.classList.add("cards");
+        } else {
+            cardsDiv.classList.add("compact-cards");
+        }
 
         sortBy(dataToRender[group], selectedSortBy);
 
