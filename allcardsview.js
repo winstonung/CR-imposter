@@ -18,6 +18,7 @@ let selectedSortBy = document.getElementById("sort-by").value;
 let showYears = document.getElementById("show-years").textContent === "Yes";
 let sortOrder = document.getElementById("sort-order").textContent.trim();
 let highlightCards = document.getElementById("obtainable-indicator").textContent === "Yes";
+let standardView = document.getElementById("standard-view").textContent === "Standard view";
 
 document.getElementById("show-years").addEventListener("click", () => {
     if (document.getElementById("show-years").textContent === "Yes") {
@@ -43,6 +44,18 @@ document.getElementById("sort-order").addEventListener("click", (event) => {
         sortOrder = "Ascending";
         event.target.textContent = "Ascending";
     }
+    renderGroup();
+});
+
+
+document.getElementById("standard-view").addEventListener("click", () => {
+    if (document.getElementById("standard-view").textContent === "Standard view") {
+        document.getElementById("standard-view").textContent = "Compact view";
+
+    } else {
+        document.getElementById("standard-view").textContent = "Standard view";
+    }
+    standardView = (document.getElementById("standard-view").textContent === "Standard view");
     renderGroup();
 });
 
@@ -121,23 +134,30 @@ function renderGroup() {
                 default:
                     colour = "#ffffff";
             }
-            cardDiv.classList.add("card");
-            if (card.name === "Mirror") {
-                cardDiv.innerHTML = `
-                    <img src="${card.iconUrls.medium}" alt="${card.name}">
-                    <p class="two-lines"><strong>${card.name}</strong></p>
-                    <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
-                    <p style="color: #da52f2">Elixir: ?</p>
-                `  ;
+            if (standardView) {
+                cardDiv.classList.add("card");
+                if (card.name === "Mirror") {
+                    cardDiv.innerHTML = `
+                        <img src="${card.iconUrls.medium}" alt="${card.name}">
+                        <p class="two-lines"><strong>${card.name}</strong></p>
+                        <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+                        <p style="color: #da52f2">Elixir: ?</p>
+                    ` ;
+                } else {
+                    cardDiv.innerHTML = `
+                        <img src="${card.iconUrls.medium}" alt="${card.name}">
+                        <p class="two-lines"><strong>${card.name}</strong></p>
+                        <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+                        <p style="color: #da52f2">Elixir: ${card.elixirCost}</p>
+                    `;
+                }
             } else {
+                cardDiv.classList.add("compact-card");
                 cardDiv.innerHTML = `
                     <img src="${card.iconUrls.medium}" alt="${card.name}">
-                    <p class="two-lines"><strong>${card.name}</strong></p>
-                    <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
-                    <p style="color: #da52f2">Elixir: ${card.elixirCost}</p>
-            `;
+                `;
             }
-            if (!showYears){
+            if (!showYears && standardView){
                 cardDiv.insertAdjacentHTML("beforeend", `<p>${card.year}</p>`);
             }
             if (highlightCards) {

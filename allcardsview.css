@@ -35,6 +35,10 @@ button {
   min-width: 3.5em;
 }
 
+#standard-view {
+  min-width: 14.5em;
+}
+
 button:hover {
   background: #666;
 }
@@ -53,11 +57,22 @@ button:hover {
     width: 120px;
 }
 
-.card img {
+.compact-card {
+    border-radius: 2px;
+    text-align: center;
+}
+
+.card img{
     width: 80px;
     height: auto;
     object-fit: contain;
     border-radius: 6px;
+}
+
+.compact-card img  {
+  width: min(80px, 15vw);
+  height: auto;
+  object-fit: contain;
 }
 
 .card:hover {
