@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'ClashRoyale';
+  src: url('fonts/YouBlockhead.ttf') format('truetype'); /* Adjust the path */
+}
+
+body {    
+    font-family: 'ClashRoyale', sans-serif;
+    background: #111;
+    color: white;
+    margin: 20px;
+    font-size: 30px;
+}
+
+a {
+  color: #4EA1FF;
+  text-decoration: none;
+}
+
+select, button {
+    font-family: inherit;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+}
+
+button {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    background-color: #444;
+    color: white;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.two-lines {
+  line-height: 1.2em;   /* height of one line */
+  min-height: 2.4em;    /* reserve space for 2 lines */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background: #222;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    margin: 0.5rem auto;       /* horizontal centering in flow */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.card img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.card:hover {
+    background: #333;
+    cursor: pointer;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    font-family: 'ClashRoyale', sans-serif;
+}
+
+#next-card {
+  margin: 0.5rem auto;       /* horizontal centering in flow */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  aspect-ratio: 3/1;
+  height: auto;
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 16px
+  }
+
+  select {
+    width: auto;
+  }
+
+}
