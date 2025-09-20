@@ -3,11 +3,32 @@ let arena = parseInt(document.getElementById("arena").value);
 const allCards = [];
 const visitedIndexes = new Set();
 let completeGame = false;
+const arenas = {
+    18: "Silent Sanctuary",
+    17: "Royal Crypt",
+    16: "Executioner's Kitchen",
+    15: "Miner's Mine",
+    14: "Serenity Peak",
+    13: "Rascal's Hideout",
+    12: "Spooky Town",
+    11: "Electro Valley",
+    10: "Hog Mountain",
+    9: "Jungle Arena",
+    8: "Frozen Peak",
+    7: "Royal Arena",
+    6: "P.E.K.K.A's Playhouse",
+    5: "Builder's Workshop",
+    4: "Spell Valley",
+    3: "Barbarian Bowl",
+    2: "Bone Pit",
+    1: "Goblin Stadium",
+    0: "Training Camp"
+};
 
 
 document.getElementById("year").addEventListener("change", (event) => {
     year = parseInt(event.target.value);
-    if (year < 2025) {
+    if (year < 2023) {
         document.getElementById("arena-label").style.display = "none";
         document.getElementById("arena").style.display = "none";
     } else {
@@ -92,7 +113,7 @@ function nextCard() {
     document.getElementById("card-name").textContent = card.name;
     document.getElementById("card-rarity-type").textContent = `${card.rarity} ${card.type}`;
     document.getElementById("card-rarity-type").style.color = colour;
-    document.getElementById("card-arena").textContent = `Arena ${card.arena}`;
+    document.getElementById("card-arena").textContent = `${arenas[card.arena]} (${card.arena})`;
     document.getElementById("card-year").textContent = `${card.year}`;
     document.getElementById("game-screen").style.display = "block";
     if (card.name === "Mirror") {

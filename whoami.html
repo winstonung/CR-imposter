@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charades - Clash Royale</title>
-    <link rel="stylesheet" href="charades.css">
+    <title>Who Am I? - Clash Royale</title>
+    <link rel="stylesheet" href="whoami.css">
 </head>
 <body>
     <div id="start-screen">
-        <h1>Charades - Clash Royale</h1>
-        <p>One person has to guess a Clash Royale card, while others provide clues without using the card's name.</p>
+        <h1>Who Am I? - Clash Royale</h1>
+        <p>One person has to guess a Clash Royale card with yes/no questions, whilst the others answer truthfully.</p>
         <br>
-        <a href="index.html">Play Imposter by clicking on this link (opens in a new tab)</a>
+        <a href="index.html">Play Imposter by clicking on this link (opens in same window)</a>
         <br> 
         <label for="year">Year:</label>
         <select id="year">
@@ -27,7 +27,7 @@
             <option value="2016">Before 2017</option>
         </select>
         <br><br>
-        <label for="arena" id="arena-label">Arena (only for current year):</label>
+        <label for="arena" id="arena-label">Arena (only for after 2023):</label>
         <select id="arena">
             <option value="18">Arena 18 (Silent Sanctuary) and above</option>
             <option value="17">Arena 17 (Royal Crypt)</option>
@@ -58,12 +58,12 @@
             <p id="card-name" class="two-lines"></p>
             <p id="card-rarity-type" class="two-lines"></p>
             <p id="card-elixir" style="color: #da52f2"></p>
-            <p id="card-arena" class="two-lines"></p>
+            <p id="card-arena" class="two-lines" style="font-size: 15px;"></p>
             <p id="card-year"></p>
         </div>
         <br>
         <button type="button" id="next-card">Next Card</button>
     </div>
-    <script src="charades.js"></script>
+    <script src="whoami.js"></script>
 </body>
 </html>
