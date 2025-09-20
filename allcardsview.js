@@ -15,9 +15,36 @@ const container = document.getElementById("container");
 
 let selectedShowUsed = document.getElementById("show-used").value;
 let selectedSortBy = document.getElementById("sort-by").value;
-let showYears = document.getElementById("show-years").checked;
+let showYears = document.getElementById("show-years").textContent === "Yes";
 let sortOrder = document.getElementById("sort-order").textContent.trim();
-let highlightCards = document.getElementById("obtainable-indicator").checked;
+let highlightCards = document.getElementById("obtainable-indicator").textContent === "Yes";
+
+document.getElementById("show-years").addEventListener("click", () => {
+    if (document.getElementById("show-years").textContent === "Yes") {
+        document.getElementById("show-years").textContent = "No";
+    } else {
+        document.getElementById("show-years").textContent = "Yes";
+    }
+});
+
+document.getElementById("obtainable-indicator").addEventListener("click", () => {
+    if (document.getElementById("obtainable-indicator").textContent === "Yes") {
+        document.getElementById("obtainable-indicator").textContent = "No";
+    } else {
+        document.getElementById("obtainable-indicator").textContent = "Yes";
+    }
+});
+
+document.getElementById("sort-order").addEventListener("click", (event) => {
+    if (sortOrder === "Ascending") {
+        sortOrder = "Descending";
+        event.target.textContent = "Descending";
+    } else {
+        sortOrder = "Ascending";
+        event.target.textContent = "Ascending";
+    }
+    renderGroup();
+});
 
 fetch("allcards.json")
     .then(response => response.json())
@@ -186,64 +213,53 @@ document.getElementById("sort-by").addEventListener("change", (event) => {
 });
 
 document.getElementById("show-years").addEventListener("click", (event) => {
-    showYears = event.target.checked;
+    showYears = event.target.textContent === "Yes";
     renderGroup();
 });
 
 document.getElementById("obtainable-indicator").addEventListener("click", (event) => {
-    highlightCards = event.target.checked;
+    highlightCards = event.target.textContent === "Yes";
     renderGroup();
 });
 
-document.getElementById("sort-order").addEventListener("click", (event) => {
-    if (sortOrder === "Ascending") {
-        sortOrder = "Descending";
-        event.target.textContent = "Descending";
-    } else {
-        sortOrder = "Ascending";
-        event.target.textContent = "Ascending";
-    }
-    renderGroup();
-});
-
-const randomCard = document.getElementById("random-card");
-randomCard.addEventListener("click", () => {
-    let card = allCards[Object.keys(allCards)[Math.floor(Math.random() * Object.keys(allCards).length)]];
-    let colour = "";
-        switch (card.rarity) {
-            case "common":
-                colour = "#888888";
-                break;
-            case "rare":
-                colour = "#f2a843";
-                break;
-            case "epic":
-                colour = "#a421ad";
-                break;
-            case "legendary":
-                colour = "#73cbfa";
-                break;
-            case "champion":
-                colour = "#f6c543";
-                break;
-            default:
-                colour = "#ffffff";
-        }
-    if (card.name === "Mirror") {
-        randomCard.innerHTML = `
-            <img src="${card.iconUrls.medium}" alt="${card.name}">
-            <p class="two-lines"><strong>${card.name}</strong></p>
-            <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
-            <p style="color: #da52f2">Elixir: ?</p>
-            <p>${card.year}</p>
-        `  ;
-    } else {
-        randomCard.innerHTML = `
-            <img src="${card.iconUrls.medium}" alt="${card.name}">
-            <p class="two-lines"><strong>${card.name}</strong></p>
-            <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
-            <p style="color: #da52f2">Elixir: ${card.elixirCost}</p>
-            <p>${card.year}</p>
-    `;
-    }
-});
+// const randomCard = document.getElementById("random-card");
+// randomCard.addEventListener("click", () => {
+//     let card = allCards[Object.keys(allCards)[Math.floor(Math.random() * Object.keys(allCards).length)]];
+//     let colour = "";
+//         switch (card.rarity) {
+//             case "common":
+//                 colour = "#888888";
+//                 break;
+//             case "rare":
+//                 colour = "#f2a843";
+//                 break;
+//             case "epic":
+//                 colour = "#a421ad";
+//                 break;
+//             case "legendary":
+//                 colour = "#73cbfa";
+//                 break;
+//             case "champion":
+//                 colour = "#f6c543";
+//                 break;
+//             default:
+//                 colour = "#ffffff";
+//         }
+//     if (card.name === "Mirror") {
+//         randomCard.innerHTML = `
+//             <img src="${card.iconUrls.medium}" alt="${card.name}">
+//             <p class="two-lines"><strong>${card.name}</strong></p>
+//             <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+//             <p style="color: #da52f2">Elixir: ?</p>
+//             <p>${card.year}</p>
+//         `  ;
+//     } else {
+//         randomCard.innerHTML = `
+//             <img src="${card.iconUrls.medium}" alt="${card.name}">
+//             <p class="two-lines"><strong>${card.name}</strong></p>
+//             <p style="color: ${colour}" class="two-lines">${card.rarity} ${card.type}</p>
+//             <p style="color: #da52f2">Elixir: ${card.elixirCost}</p>
+//             <p>${card.year}</p>
+//     `;
+//     }
+// });

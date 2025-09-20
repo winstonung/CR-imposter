@@ -9,16 +9,8 @@
 <body>
     
     <h1>All Cards in Clash Royale</h1>
-    <h3>Obtainable cards are highlighted in green, all other cards are highlighted in red.</h3>
-    <a href="index.html">Play Imposter by clicking this link (opens in same window).</a>    
-    <br><br>
-    <div class="card" id="random-card">
-        <img src="images/MysteryCard.png">
-        <p class="two-lines"><strong>Generate card</strong></p>
-        <p style="color: #888888;" class="two-lines">no rarity - no type</p>
-        <p style="color: #da52f2">Elixir: ?</p>
-        <p>????</p>
-    </div>
+    <h3><a style="color: #2ecb53ff">Obtainable cards are highlighted in green</a>, <a style="color: #cb2e2eff">all other cards are highlighted in red.</a></h3>
+    <a href="index.html">Play Imposter by clicking this link (opens in same window).</a>
     <br><br>
     <label for="show-used">Show cards</label>
     <select id="show-used">
@@ -26,6 +18,7 @@
         <option value="in-group">Obtainable cards</option>
         <option value="not-in-group">Non-obtainable cards</option>
     </select>
+    <br>
     <br>
     <label for="sort-by">Sort by</label>
     <select id="sort-by">
@@ -36,11 +29,13 @@
     </select>
     <button id="sort-order">Ascending</button>
     <br>
+    <br>
     <label for="show-years">Show years</label>
-    <input type="checkbox" id="show-years" value="1" checked>
+    <button type="button" id="show-years" value="1" checked>Yes</button>
+    <br>
     <br>
     <label for="obtainable-indicator">Highlight (non) obtainable cards</label>
-    <input type="checkbox" id="obtainable-indicator" value="1" checked>
+    <button type="button" id="obtainable-indicator" value="1" checked>Yes</button>
 
     <div id="container"></div>
 

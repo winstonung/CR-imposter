@@ -8,28 +8,35 @@
 </head>
 <body>
     <div id="title-screen">
-        <h1>Imposter - Clash Royale Edition</h1>
+        <h1><a class=imposter>Imposter</a> - <a class="civillian">Clash Royale Edition</a></h1>
         <p>Find who doesn't have the same card as everyone else.</p>
         <p>You can only describe your card with one word at a time, and you CANNOT use any of the card details in your words.</p>
         <p>For example with Giant, you cannot say the following:</p>
         <ul>
             <li>"Giant"</li>
-            <li>"Rare"</li>
+            <li style="color: #f2a843">"Rare"</li>
             <li>"Troop"</li>
             <li>"Melee"</li>
-            <li>"5 elixir"</li>
+            <li style="color: #da52f2">"5 elixir"</li>
             <li>"2016"</li>
         </ul>
         <a href="allcardsview.html">View all cards by clicking this link (opens in same window).</a>
         <div id="settings">
-            <label for="num-players">Number of Players:</label>
+            <label for="num-players">Number of <a class="civillian">Play</a><a class="imposter">ers</a>:</label>
+            <br>
+            <button type="button" id="decrease-players" class="start-buttons">-</button>
             <input type="tel" id="num-players" min="3" value="3">
+            <button type="button" id="increase-players" class="start-buttons">+</button>
             <br>
-            <label for="num-imposters">Number of Imposters:</label>
+            <br>
+            <label for="num-imposters">Number of <a class="imposter">Imposters</a>:</label>
+            <br>
+            <button type="button" id="decrease-imposters" class="start-buttons">-</button>
             <input type="tel" id="num-imposters" min="1" value="1">
+            <button type="button" id="increase-imposters" class="start-buttons">+</button>
             <br>
-            <label for="imposter-knows-they're-imposter">Imposter knows they are the imposter</label>
-            <input type="checkbox" id="imposter-knows" checked>
+            <label for="imposter-knows-they're-imposter"><a class="imposter">Imposter(s)</a> knows they are the <a class="imposter">imposter</a></label>
+            <button type="button" id="imposter-knows">Yes</button>
             <br>
             <label for="latest-year">Year:</label>
             <select id="latest-year">

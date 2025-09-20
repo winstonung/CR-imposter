@@ -17,6 +17,7 @@ a {
 
 select, button {
     font-family: inherit;
+    text-align: center;
 }
 
 button {
@@ -24,6 +25,14 @@ button {
   color: white;
   border: none;
   border-radius: 6px;
+}
+
+#sort-order {
+  min-width: 11em;
+}
+
+#show-years, #obtainable-indicator {
+  min-width: 3.5em;
 }
 
 button:hover {
