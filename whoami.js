@@ -121,8 +121,16 @@ function nextCard() {
     } else {
         document.getElementById("card-elixir").textContent = `${card.elixirCost} elixir`;
     }
+    document.getElementById("cards-left").textContent = `${allCards.length - visitedIndexes.size} cards left`;
 }
 
 
 
 document.getElementById("next-card").addEventListener("click", nextCard);
+
+const keys = ["n", "N", " ", "Enter", "ArrowRight"];
+document.addEventListener("keydown", (event) => {
+    if (keys.includes(event.key) && document.getElementById("game-screen").style.display === "block") {
+        nextCard();
+    }
+});

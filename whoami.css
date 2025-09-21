@@ -33,6 +33,12 @@ button {
     align-items: center;
 }
 
+#cards-left {
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+}
+
 button:hover {
     background-color: #666;
 }
@@ -95,7 +101,11 @@ button:hover {
   padding: 0;
   height: 100%;
   overflow-x: hidden; /* prevent sideways scroll */
-    font-size: 16px;
+  font-size: 16px;
+  }
+
+  select {
+    font-size: 12px;
   }
 
   #game-screen {
